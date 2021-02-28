@@ -1,0 +1,94 @@
+{
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  // "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 15,
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Hack,'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.wordWrap": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.stickyTabStops": true,
+  "javascript.format.semicolons": "insert",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    {
+      "text": "VIDEO",
+      "color": "#333",
+      "backgroundColor": "#3498db"
+    },
+    {
+      "text": "FIXME",
+      "color": "#333",
+      "backgroundColor": "#e67e22"
+    },
+    {
+      "text": "LEC",
+      "color": "#333",
+      "backgroundColor": "#f1c40f"
+    },
+    {
+      "text": "BUG",
+      "color": "#333",
+      "backgroundColor": "#e74c3c"
+    },
+    {
+      "text": "TODO",
+      "color": "#333",
+      "backgroundColor": "#2ecc71"
+    }
+  ],
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+  ],
+  "terminal.integrated.fontSize": 18,
+  "editor.minimap.enabled": false,
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Default Light+",
+  "editor.tokenColorCustomizations": {
+    "comments": "#fd1e1e81"
+  },
+  "diffEditor.wordWrap": "on",
+//  "editor.wrappingIndent": "indent",
+//  "editor.folding": false,
+//  "editor.renderIndentGuides": false,
+  "[plaintext]": {
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "window.zoomLevel": 1,
+  "workbench.sideBar.location": "right"
+}

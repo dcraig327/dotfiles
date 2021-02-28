@@ -1,0 +1,2 @@
+systemctl --user start gpu-fan.service
+systemctl --user start --now gpu-fan.service

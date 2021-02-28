@@ -149,7 +149,7 @@ export VISUAL=vim
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 
-source "${HOME}/bin/bash-wakatime/bash-wakatime.sh"
+source "${HOME}/bin/bash-wakatime.sh"
 
 
 alias sudo='sudo  -E  '

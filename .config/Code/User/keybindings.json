@@ -1,0 +1,22 @@
+// Place your key bindings in this file to override the defaults
+// "editor.action."
+// "workbench.action.files.save"
+// "prettier.formatWithCursor(' 1')"  //api call to stop cursor movement when formatting
+[
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.action.openGlobalKeybindingsFile"
+  }
+]

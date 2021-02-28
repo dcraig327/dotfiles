@@ -149,6 +149,8 @@ export VISUAL=vim
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 
+source "${HOME}/bin/bash-wakatime/bash-wakatime.sh"
+
 
 alias sudo='sudo  -E  '
 alias sps='sudo ps aux|grep'
@@ -176,4 +178,6 @@ function gitit {
 
 	git add $1 && git commit -m "$2" && git push
 }
+
+
 

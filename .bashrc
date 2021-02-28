@@ -151,5 +151,29 @@ export HISTFILESIZE=10000
 
 
 alias sudo='sudo  -E  '
-alias backup="node -r ${HOME}/dev/backup/node_modules/dotenv/config ${HOME}/bin/backup.js dotenv_config_path=${HOME}/bin/.env"
+alias sps='sudo ps aux|grep'
+
+alias gg='cd;clear'
+alias lsg='paste <(ls -ld *) <(for i in *; do if [ -d "$i"/.git ] ; then echo "($(git --git-dir="$i"/.git symbolic-ref --short HEAD))"; else echo; fi; done)'
+
 alias dot='/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
+alias backup="node -r ${HOME}/dev/backup/node_modules/dotenv/config ${HOME}/bin/backup.js dotenv_config_path=${HOME}/bin/.env"
+
+
+function dotit {
+	if [[ 2 -ne $# ]]; then
+		echo "Usage: dotit file \"commit message\""
+		return
+	fi
+
+	dot add $1 && dot commit -m "$2" && dot push
+}
+function gitit {
+	if [[ 2 -ne $# ]]; then
+		echo "Usage: gitit file \"commit message\""
+		return
+	fi
+
+	git add $1 && git commit -m "$2" && git push
+}
+

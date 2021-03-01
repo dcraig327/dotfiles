@@ -20,62 +20,74 @@
     "editor.formatOnType": true,
     "editor.formatOnSave": true
   },
-  "todohighlight.isEnable": true,
-  "todohighlight.isCaseSensitive": true,
-  "todohighlight.keywords": [
-    {
-      "text": "VIDEO",
-      "color": "#333",
-      "backgroundColor": "#3498db"
-    },
-    {
-      "text": "FIXME",
-      "color": "#333",
-      "backgroundColor": "#e67e22"
-    },
-    {
-      "text": "LEC",
-      "color": "#333",
-      "backgroundColor": "#f1c40f"
-    },
-    {
-      "text": "BUG",
-      "color": "#333",
-      "backgroundColor": "#e74c3c"
-    },
-    {
-      "text": "TODO",
-      "color": "#333",
-      "backgroundColor": "#2ecc71"
-    }
-  ],
-  "todohighlight.include": [
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.html",
-    "**/*.php",
-    "**/*.css",
-    "**/*.scss"
-  ],
-  "todohighlight.exclude": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/dist/**",
-    "**/build/**",
-    "**/.vscode/**",
-    "**/.github/**",
-  ],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  // "todohighlight.isEnable": true,
+  // "todohighlight.isCaseSensitive": true,
+  // "todohighlight.keywords": [
+  //   {
+  //     "text": "VIDEO",
+  //     "color": "#333",
+  //     "backgroundColor": "#3498db"
+  //   },
+  //   {
+  //     "text": "FIXME",
+  //     "color": "#333",
+  //     "backgroundColor": "#e67e22"
+  //   },
+  //   {
+  //     "text": "LEC",
+  //     "color": "#333",
+  //     "backgroundColor": "#f1c40f"
+  //   },
+  //   {
+  //     "text": "BUG",
+  //     "color": "#333",
+  //     "backgroundColor": "#e74c3c"
+  //   },
+  //   {
+  //     "text": "TODO",
+  //     "color": "#333",
+  //     "backgroundColor": "#2ecc71"
+  //   }
+  // ],
+  // "todohighlight.include": [
+  //   "**/*.js",
+  //   "**/*.jsx",
+  //   "**/*.ts",
+  //   "**/*.tsx",
+  //   "**/*.html",
+  //   "**/*.php",
+  //   "**/*.css",
+  //   "**/*.scss"
+  // ],
+  // "todohighlight.exclude": [
+  //   "**/node_modules/**",
+  //   "**/bower_components/**",
+  //   "**/dist/**",
+  //   "**/build/**",
+  //   "**/.vscode/**",
+  //   "**/.github/**",
+  // ],
   "terminal.integrated.fontSize": 18,
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "explorer.confirmDelete": false,
   "git.enableSmartCommit": true,
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Oceanic Next (dimmed bg)",
   "editor.tokenColorCustomizations": {
-    "comments": "#fd1e1e81"
+    "comments": "#b47714"
   },
   "diffEditor.wordWrap": "on",
 //  "editor.wrappingIndent": "indent",
@@ -90,5 +102,29 @@
   },
   "liveServer.settings.donotVerifyTags": true,
   "window.zoomLevel": 1,
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "*.pdf"
+    }
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#333333",
+    "statusBar.noFolderBackground": "#333333",
+    "statusBar.debuggingBackground": "#263238"
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "projectManager.git.baseFolders": [
+    "$home\\\\dev"
+  ],
+  "html.format.indentInnerHtml": true,
+  "editor.detectIndentation": false,
+  "html.format.wrapAttributes": "force-aligned",
+  "html.format.wrapAttributesIndentSize": 2,
+  "html.format.endWithNewline": true,
+  "html.format.unformatted": "null",
+  "html.format.extraLiners": ""
 }

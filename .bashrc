@@ -160,6 +160,7 @@ alias lsg='paste <(ls -ld *) <(for i in *; do if [ -d "$i"/.git ] ; then echo "(
 
 alias dot='/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
 alias backup="node -r ${HOME}/dev/backup/node_modules/dotenv/config ${HOME}/bin/backup.js dotenv_config_path=${HOME}/bin/.env"
+alias diskscan="baobab"
 
 
 function dotit {

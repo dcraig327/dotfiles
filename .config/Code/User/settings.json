@@ -102,7 +102,6 @@
   },
   "liveServer.settings.donotVerifyTags": true,
   "window.zoomLevel": 1,
-  "workbench.sideBar.location": "right",
   "workbench.editorAssociations": [
     {
       "viewType": "default",
@@ -122,9 +121,29 @@
   ],
   "html.format.indentInnerHtml": true,
   "editor.detectIndentation": false,
-  "html.format.wrapAttributes": "force-aligned",
   "html.format.wrapAttributesIndentSize": 2,
   "html.format.endWithNewline": true,
   "html.format.unformatted": "null",
-  "html.format.extraLiners": ""
+  "html.format.extraLiners": "",
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.stageFile",
+      "interval": 100,
+      "sequence": [
+        "git.stage",
+        "workbench.scm.focus"
+        // "workbench.view.scm"
+      ]
+    },
+    {
+      "command": "multiCommand.stageAll",
+      "interval": 100,
+      "sequence": [
+        "git.stageAll",
+        "workbench.scm.focus"
+        // "workbench.view.scm"
+      ]
+    }
+  ],
+  "outline.showVariables": false
 }

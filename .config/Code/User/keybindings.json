@@ -2,6 +2,38 @@
 // "editor.action."
 // "workbench.action.files.save"
 // "prettier.formatWithCursor(' 1')"  //api call to stop cursor movement when formatting
+// {
+//   "key": "up",
+//   "command": "cursorUp",
+//   "when": "sideBarFocus"
+// },
+// {
+//   "key": "up",
+//   "command": "-cursorUp",
+//   "when": "textInputFocus"
+// }
+// {
+//   "key": "alt+o",
+//   "command": "extension.multiCommand.execute",
+//   "args": { 
+//     "sequence": [
+//       //if  showing explorer OR 
+//       //    (changing file && exploror visible)
+//       //save focus
+//       //focus outline
+//       //collapse all
+//       //restore focus
+
+//       "outline.focus",
+//       "list.collapseAll",
+//       "workbench.action.focusFirstEditorGroup"
+//     ]
+//   }
+// }
+// {
+//   "key": "f4",
+//   "command": "workbench.action.focusActiveEditorGroup"
+// },
 [
   {
     "key": "ctrl+shift+,",
@@ -18,5 +50,100 @@
   {
     "key": "ctrl+shift+'",
     "command": "workbench.action.openGlobalKeybindingsFile"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+pageup",
+    "command": "workbench.action.previousSideBarView"
+  },
+  {
+    "key": "ctrl+shift+pagedown",
+    "command": "workbench.action.nextSideBarView"
+  },
+  {
+    "key": "f1",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "f2",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "f3",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+      "sequence": [
+          "multiCommand.stageFile"
+      ]
+    }
+  },
+  {
+    "key": "shift+f3",
+    "command": "extension.multiCommand.execute",
+    "args": { 
+      "sequence": [
+        "multiCommand.stageAll"
+      ]
+    }
+  },
+  {
+    "key": "f5",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.editor.nextChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f5",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "f6",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.editor.previousChange",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f6",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "f8",
+    "command": "workbench.view.extension.project-manager"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+s",
+    "command": "-git.stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+f3",
+    "command": "git.stageSelectedRanges"
   }
 ]
